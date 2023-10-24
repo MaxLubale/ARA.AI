@@ -4,3 +4,14 @@ body {
     margin: 0;
     padding: 0;
 }
+#submit-button {
+    background-color: #008CBA; /* Set the initial background color */
+    color: white; /* Set the text color */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#submit-button:hover {
+    background-color: #FF0000; /* Change to red on hover */
+}
