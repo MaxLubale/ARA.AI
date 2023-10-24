@@ -2,7 +2,7 @@ document.getElementById('chatbot-form').addEventListener('submit', async (event)
     event.preventDefault(); // Prevent the form from refreshing the page
 
     const userInput = document.getElementById('userInput').value;
-
+  //post requset to send our data 
     const url = 'https://stileschat-ai.p.rapidapi.com/api';
     const options = {
         method: 'POST',
@@ -21,7 +21,7 @@ document.getElementById('chatbot-form').addEventListener('submit', async (event)
         const response = await fetch(url, options);
         const result = await response.text();
 
-        // Assuming the response is plain text, you can display it in the HTML
+        // Display the response on the html
         const chatbotResponseDiv = document.getElementById('chatbot-response');
         chatbotResponseDiv.textContent = result;
     } catch (error) {
@@ -32,21 +32,6 @@ document.getElementById('chatbot-form').addEventListener('submit', async (event)
 
       
 
-// Display the "out" text in the HTML, for example, in a div with the ID 'chatbot-response'
-// const chatbotResponseDiv = document.getElementById('chatbot-response');
-// chatbotResponseDiv.textContent = outText;
 
-
-// Assuming `outText` contains the joke with HTML line breaks
-const jokeWithLineBreaks = responseObj.out;
-
-// Remove the HTML line breaks
-const jokeWithoutLineBreaks = jokeWithLineBreaks.replace(/<br\s*\/?>/g, '');
-
-// Display the joke without line breaks in the HTML
-const chatbotResponseDiv = document.getElementById('chatbot-response');
-chatbotResponseDiv.textContent = jokeWithoutLineBreaks;
-
-        
         
     
