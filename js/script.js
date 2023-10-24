@@ -27,11 +27,30 @@ document.getElementById('chatbot-form').addEventListener('submit', async (event)
     try {
         const response = await fetch(url, options);
         const result = await response.text();
+
+       // Parse the JSON response and extract the "out" text
+const responseObj = JSON.parse(result);
+const outText = responseObj.out;
+
+// Display the "out" text in the HTML, for example, in a div with the ID 'chatbot-response'
+// const chatbotResponseDiv = document.getElementById('chatbot-response');
+// chatbotResponseDiv.textContent = outText;
+
+
+// Assuming `outText` contains the joke with HTML line breaks
+const jokeWithLineBreaks = responseObj.out;
+
+// Remove the HTML line breaks
+const jokeWithoutLineBreaks = jokeWithLineBreaks.replace(/<br\s*\/?>/g, '');
+
+// Display the joke without line breaks in the HTML
+const chatbotResponseDiv = document.getElementById('chatbot-response');
+chatbotResponseDiv.textContent = jokeWithoutLineBreaks;
+
         
-        // Modify the script to append the Chatbot's response to the 'chatbot-response' div
-        const chatbotResponseDiv = document.getElementById('chatbot-response');
-        chatbotResponseDiv.innerHTML = result;
+        
     } catch (error) {
         console.error('Error:', error);
     }
 });
+
