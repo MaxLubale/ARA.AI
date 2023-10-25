@@ -17,6 +17,14 @@ body {
     background-color: #FF0000; /* Change to red on hover */
 }
 
-#chatbot-response {
-    color: aqua;
+.display-1{
+    color:aqua;
+    text-align: center;
+}
+
+label{
+    color: aliceblue;
+}
+#chatbot-response{
+    color: black;
 }

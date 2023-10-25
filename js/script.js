@@ -1,7 +1,7 @@
 document.getElementById('chatbot-form').addEventListener('submit', async (event) => {
     event.preventDefault(); // Prevent the form from refreshing the page
-
-    const userInput = document.getElementById('userInput').value;
+  
+    const userInput = document.getElementById('user-input').value;
   //post requset to send our data 
     const url = 'https://stileschat-ai.p.rapidapi.com/api';
     const options = {
@@ -14,16 +14,14 @@ document.getElementById('chatbot-form').addEventListener('submit', async (event)
         body: JSON.stringify({
             promptInput: userInput,
             context: false
+            
         })
     };
      
     try {
         const response = await fetch(url, options);
         const result = await response.text();
-        const responseObj = JSON.parse(result);
-        // clean out the response
-        const outText = responseObj.out;
-        const cleanText = responseText.replace(/(\r\n|\n|\r)/gm, ' ');
+       
         // Display the response on the html
         const chatbotResponseDiv = document.getElementById('chatbot-response');
         chatbotResponseDiv.textContent = result;
