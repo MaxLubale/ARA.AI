@@ -18,3 +18,7 @@ body {
 #submit-button:hover {
     background-color: #FF0000; /* Change to red on hover */
 }
+
+#chatbot-response {
+    color: aqua;
+}
