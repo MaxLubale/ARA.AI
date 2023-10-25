@@ -1,5 +1,19 @@
+ // JavaScript to handle the button click event
+ document.getElementById('chatbot-form').addEventListener('submit', function() {
+    // Display "thinking..." text in the response area
+    document.getElementById('chatbot-response').innerHTML = 'HEY! how can I help you today?';
+    setTimeout(function() {
+        // Simulate a response from the server
+        var responseText = 'Thinking...';
+        document.getElementById('chatbot-response').innerHTML = responseText;
+      }, 1000); // Simulating a  delay
+    });
+
+
+
 document.getElementById('chatbot-form').addEventListener('submit', async (event) => {
     event.preventDefault(); // Prevent the form from refreshing the page
+   
   
     const userInput = document.getElementById('user-input').value;
   //post requset to send our data 
