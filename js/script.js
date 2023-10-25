@@ -13,14 +13,16 @@ document.getElementById('chatbot-form').addEventListener('submit', async (event)
         },
         body: JSON.stringify({
             promptInput: userInput,
-            // context:true
+            context: false
         })
-        
     };
      
     try {
         const response = await fetch(url, options);
         const result = await response.text();
+        const responseObj = JSON.parse(result);
+        // clean out the response
+        const outText = responseObj.out;
         const cleanText = responseText.replace(/(\r\n|\n|\r)/gm, ' ');
         // Display the response on the html
         const chatbotResponseDiv = document.getElementById('chatbot-response');
