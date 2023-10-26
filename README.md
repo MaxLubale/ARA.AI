@@ -1,6 +1,6 @@
-# Galaxy Chatbot
+# ARA Chatbot
 
-Galaxy is a web application powered by a large language model that can answer questions in an informative and coherent manner. It is designed to be user-friendly and versatile, so you can use it to get answers to a wide range of questions, from general knowledge to specific topics.
+Ara is a web application powered by a large language model that can answer questions in an informative and coherent manner. It is designed to be user-friendly and versatile, so you can use it to get answers to a wide range of questions, from general knowledge to specific topics.
 
 ## Table of Contents
 
@@ -19,7 +19,7 @@ Galaxy is a web application powered by a large language model that can answer qu
 
 ## Demo
 
-Visit the live demo of Galaxy at [galaxy-demo.com](https://galaxy-demo.com).
+Visit the live demo of Galaxy at [](https://galaxy-demo.com).
 
 ## Getting Started
 
@@ -28,7 +28,7 @@ Visit the live demo of Galaxy at [galaxy-demo.com](https://galaxy-demo.com).
    git clone https://github.com/MaxLubale/Phase1-project
 
  Navigate to the project directory:
-   cd galaxy-chatbot
+   cd Phase1-project
 
 Install the dependencies:
   npm install
@@ -62,4 +62,4 @@ You can customize the appearance of the chat bot, the response format, or integr
 Contributions are welcome! If you would like to contribute to the project, please fork the repository and submit a pull request.
 
 ## License
-Galaxy Chatbot is released under the MIT License.
+Ara Chatbot is released under the MIT License.
