@@ -1,7 +1,4 @@
  // JavaScript to handle the button click event
- document.getElementsByClassName('bi bi-robot').onclick = function() {
-    alert('HEY!');
-   }; 
  document.getElementById('chatbot-form').addEventListener('submit', function() {
     // Display "thinking..." text in the response area
     document.getElementById('chatbot-response').innerHTML = 'HEY! how can I help you today?';
