@@ -6,7 +6,7 @@
         // Simulate a response from the server
         var responseText = 'Thinking...';
         document.getElementById('chatbot-response').innerHTML = responseText;
-      }, 1000); // Simulating a  delay
+      }, 800); // Simulating a  delay
     });
 
 
