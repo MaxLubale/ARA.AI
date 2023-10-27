@@ -19,7 +19,7 @@ Ara is a web application powered by a large language model that can answer quest
 
 ## Demo
 
-Visit the live demo of ARA at [https://app.netlify.com/sites/araai]
+Visit the live demo of ARA at [https://araai.netlify.app/]
 
 ## Getting Started
 
